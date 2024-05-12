@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocksispa</title>
+    
+</head>
+<body>
+    <h1>GaWeBaWeBo</h1>
+    <button onclick="location.href ='rocksispa.html' ">HOME</button>
+    <button onclick="location.href='rocksispa2.html'">clIcK for REsTart</button>
+    <br><br>
+
+    <script>
+    
+
+        let basic = ["가위", "바위", "보"];
+
+        function rsp(mine, com) {
+            if(mine === "가위" && com ==="가위") {
+                document.write("com: 가위<br>com: 비겼습니다");
+            }else if(mine === "가위" && com === "바위") {
+                document.write("com: 바위<br>com: 패배하셨습니다");
+            }else if(mine == "가위" && com == "보") {
+                document.write("com: 보<br>com: 승리하셨습니다.");
+            }
+
+            if(mine === "바위" && com ==="가위") {
+                document.write("com: 가위<br>com: 승리하셨습니다.");
+            }else if(mine === "바위" && com === "바위") {
+                document.write("com: 바위<br>com: 비겼습니다.");
+            }else if(mine == "바위" && com == "보") {
+                document.write("com: 보<br>com: 패배하셨습니다.");
+            }
+
+            if(mine === "보" && com ==="가위") {
+                document.write("com: 가위<br>com: 패배하셨습니다.");
+            }else if(mine === "보" && com === "바위") {
+                document.write("com: 바위<br>com: 승리하셨습니다.");
+            }else if(mine == "보" && com == "보") {
+                document.write("com: 보<br>com: 비겼습니다.");
+            }
+        }
+
+        let com = basic[Math.floor(Math.random() * basic.length)];
+
+        let mine = prompt("com: 수를 입력해주세요");
+
+        if(mine !== "가위" && mine !== "바위" && mine !== "보"){
+                document.write("com: 올바른 수를 입력해 주세요!! ex)가위");
+                
+            
+        }
+
+        let res = rsp(mine, com);
+    </script>
+    
+
+
+
+
+
+    
+</body>
+</html>
