@@ -22,7 +22,7 @@
                 document.write("com: 가위<br>com: 비겼습니다");
             }else if(mine === "가위" && com === "바위") {
                 document.write("com: 바위<br>com: 패배하셨습니다");
-            }else if(mine == "가위" && com == "보") {
+            }else if(mine === "가위" && com === "보") {
                 document.write("com: 보<br>com: 승리하셨습니다.");
             }
 
@@ -30,7 +30,7 @@
                 document.write("com: 가위<br>com: 승리하셨습니다.");
             }else if(mine === "바위" && com === "바위") {
                 document.write("com: 바위<br>com: 비겼습니다.");
-            }else if(mine == "바위" && com == "보") {
+            }else if(mine === "바위" && com === "보") {
                 document.write("com: 보<br>com: 패배하셨습니다.");
             }
 
@@ -38,7 +38,7 @@
                 document.write("com: 가위<br>com: 패배하셨습니다.");
             }else if(mine === "보" && com === "바위") {
                 document.write("com: 바위<br>com: 승리하셨습니다.");
-            }else if(mine == "보" && com == "보") {
+            }else if(mine === "보" && com === "보") {
                 document.write("com: 보<br>com: 비겼습니다.");
             }
         }
@@ -53,7 +53,7 @@
             
         }
 
-        let res = rsp(mine, com);
+        rsp(mine, com);
     </script>
     
 
